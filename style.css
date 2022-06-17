@@ -45,7 +45,7 @@ html{
 .header__barra__menu{
     min-width: 100%;
     height: 8rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to left, #000, #fff) ;
     display: flex;
     justify-content: space-between;
     justify-items: center;
@@ -104,7 +104,7 @@ html{
     
 
 .menu__lista > li:hover{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     transition: all 400ms ease;
     transform: scale(1.13);
@@ -178,6 +178,7 @@ html{
     text-align: center;
     border-bottom: 1px solid #000000;
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right , #000, #fff) ;   
 }
 
 /*caja principal hot sale*/
