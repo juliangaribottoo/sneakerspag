@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Head</title>
+    <link rel="icon" href="../fotos/sneaker-head-sd-graphics-studio.jpg"">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--inicio header-->
+    <header class="header">
+        <div class="caja__header">
+            <div class="logo">
+                <a href="../index.html"><img src="../fotos/sneaker-head-sd-graphics-studio.jpg" alt="logo"></a>
+            </div>
+            <div class="login">
+                <a href="login.html">
+                    <img src="..//fotos/login.png" alt="login">
+                    <p>Login</p>
+                </a>
+            </div>      
+        </div>
+    </header>
+    <!--fin del header-->
+    <main class="ingreso">
+        <div class="ingreso">
+            <!--pantalla mitad izquierda-->
+            <section class="ingresar">
+                <div class="ingresar__usuario">
+                    <h3 class="titulo__login">Iniciar Sesión</h3>
+                    <div class="formulario__ingreso">
+                        <form action="datos__ingreso">
+                            <input type="email" name="INGRESARMAIL" id="INGRESARMAIL" placeholder="INGRESA TU MAIL" required class="input">
+                            <input type="password" name="CONTRASEÑA" id="CONTRASEÑA" placeholder="INGRESA TU CONTRASEÑA" required class="input">
+                            <div class="boton">
+                                <label for="RecordarUsuario">Recordar Usuario</label><input type="checkbox" name="RecordarUsuario" id="RecordarUsuario">    
+                            </div>
+                            <input type="submit" value="Enviar" class="input__enviar">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--fin de pantalla mitad izquierda-->
+
+            <!--pantalla mitad derecha-->
+            <section class="nuevo">
+                <div class="">
+                    <h3 class="titulo__login">Todavia no tenes tu cuenta?</h3>
+                    <h5>Create un usuario y compra las mejores sneakers de toda Argentina</h5>
+                    <div class="formularioss">
+                        <form action="datos_usuario_nuevo">
+                            <input type="text" name="Ingresatunombre" id="INGRESATUNOMBRE" placeholder="INGRESA TU NOMBRE" required>
+                            <input type="text" name="Apodo" id="APODO" placeholder="COMO TE GUSTA QUE TE DIGAN?">
+                            <input type="number" name="Celular" id="CELULAR" placeholder="Ingresa tu celular" required>
+                            <input type="mail" name="Mail" id="INGRESATUMAIL" placeholder="Ingresa tu mail" required>
+                            <label for="Acepto">Acepto los <b>Terminos & Condiciones</b> <input type="checkbox" name="acepto" id="Acepto"></label>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--fin de pantalla mitad derecha-->
+        </div>
+    </main>
+    <footer>
+        <div class="caja__footer">
+            <div class="primer footer">
+                <p>Todos los derechos reservados</p>
+                <p>Nombre pag web es una marca registrada</p>
+            </div>
+            <div class="segundo__footer">
+                <div class="texto_footer">
+                    <p>SEGUINOS PARA ENTERARTE DE TODO LO NUEVO QUE SE VIENE Y PROXIMOS SORTEOS</p>
+                </div>
+                <div class="caja__redes">
+                    <div class="texto__redes">
+                        <p>NUESTAS REDES</p>
+                    </div>
+                    <div class="caja__logos">
+                        <a href=""><img src="#" alt="#"></a>
+                        <a href=""><img src="#" alt="#"></a>
+                        <a href=""><img src="#" alt="#"></a>
+                        <a href=""><img src="#" alt="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
