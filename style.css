@@ -12,162 +12,54 @@ html{
 
 /*pagina de index*/
 
-/*header index*/
+/*=============================================*/
 
-.header{
-    display: grid;
-    grid-template-columns:repeat(12,1fr);
-    height: 80rem;
-}
-
-/*fondo de video*/
-
-.header__video{
-    grid-column: 1/13;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    max-height: auto;
-    overflow: hidden;
-    z-index: -10;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.header__video > video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-/*barra de menu horizontal*/
-
-.header__barra__menu{
-    min-width: 100%;
-    height: 8rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
-    position: absolute;
-}
-
-
-.check__img{
-    display: none;
-    width: 0;
-    height: 0;
-}
-
-#check__menu{
-    display: none;
-    width: 0;
-    height: 0;
-}
-/*logo*/
-
-.header__logo{
-    width: 7rem;
-    height: 8rem;
-    margin: .5rem 0 0 1rem;
-}
-.header__logo > a{
-    width: 100%;
-    height: 100%;
-}
-
-.header__logo > a> img{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/*lista menu*/
-
-.header__menu{
-    width: 100%;
-}
-
-.menu__lista{
-    width: 100%;
-    height: 50%;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1em;
-}
-
-.menu__lista > li{
-    display: inline-block;
-    padding: .5em;
-}
-    
-
-.menu__lista > li:hover{
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
-    transition: all 400ms ease;
-    transform: scale(1.13);
-}
-
-.menu__lista > li >a{
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    font-size: 1.7rem;
-}
-
-/*sub menu*/
-
-.menu__lista > li > ul{
-    display: none;
-}
-
-.menu__lista > li > ul:hover{
-    display: inline-block;
-
-}
-
-.menu__lista > li > ul > a{
-    color: #ffffff;
-}
-
+/*navbar*/
 
 /*logo*/
-
-.header__login{
-    width: 7rem;
-    height: auto;
-    margin: .5rem 0 0 1rem;
-    align-items: center;
+.container-fluid > a > img {
+    width: 9rem;
+    height: 9rem;
 }
 
-.header__login > img{
-    max-width: 70%;
-    height: auto;
-    object-fit: cover;
-}
 
-.header__login > a{
-    max-width: 30%;
-    height: auto;
-    font-size: 1.5em;
+/*color navbar text*/
+
+.nav-item > a {
     color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-item > a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: all 400ms ease;
 }
 
 
-/*contenido principal main index*/
+/*video principal*/
 
-
-/*seccion hot sale*/
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    height: 80rem;
+.video__lebron{
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
 }
 
-/*titulo general*/
+
+.carousel-item > img{
+    width: 40rem;
+    height: 40rem;
+    object-fit: contain;
+}
+
+.carousel-caption > h5,p{
+    color: #000000;
+    font-size: 2rem;
+}
+
+/*====================================TODOS LOS TITULOS===========================*/
 
 .titulo{
     grid-column: 1/13;
@@ -177,49 +69,21 @@ html{
     letter-spacing: 3rem;
     text-align: center;
     border-bottom: 1px solid #000000;
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
 }
 
-/*caja principal hot sale*/
-
-.hot__sale__zapatillas{
-    grid-column: 1/13;
-    display: flex;
-    justify-content: space-between;
-    height: 70rem;
+@media screen and (max-width:768px){
+    .titulo{
+        grid-column: 1/13;
+        height: 4rem;
+        display:block;
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        text-align: center;
+        border-bottom: 1px solid #000000;
+    }
 }
 
-.sale__box{
-    max-width: 33%;
-    height: auto;
-}
-
-/*fotos hot sale*/
-
-.box__foto{
-    width: 100%;
-    height: 80%;
-}
-
-.box__foto > img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    align-items: center;
-}
-
-/*descripcion hot sale zapas*/
-.hot__sale__box__texto{
-    width: 100%;
-    height: 20%;
-}
-
-.hot__sale__box__texto > p{
-    font-size: 3rem;
-    text-align: center;
-}
-
-/*seccion colaboraciones*/
+/*======COLABORACIONES======*/
 
 .box__colaboraciones{
     grid-column: 1/13;
@@ -227,23 +91,39 @@ html{
 }
 
 .titulo__colaboraciones{
-    width: 100%;
+    grid-column: 1/13;
     height: 8rem;
     display:block;
     font-size: 6rem;
     letter-spacing: 3rem;
     text-align: center;
     border-bottom: 1px solid #000000;
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width:768px){
+    .grid{
+        height: 80rem;
+    }
+    
+
+    .titulo__colaboraciones{
+        grid-column: 1/13;
+        height: 4rem;
+        display:block;
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        text-align: center;
+        border-bottom: 1px solid #000000;
+    }
+}
 /*caja de las fotos*/
 
 .box__fotos__colab{
     width: 100%;
-    height: 90%;
+    height: 45rem;
     display: flex;
     justify-content: space-between;
+
 }
 
 
@@ -314,64 +194,54 @@ html{
 
 .segunda__colab:hover .hover__colab{
     transform: scale(1);
-}d
+}
 
 
-/*seccion new arrivals*/
+@media screen and (max-width:768px){
+    .box__fotos__colab{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .primer__colab{
+        width: 100%;
+        text-align: center ;
+    }
+    .primer__colab > img{
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .segunda__colab{
+        width: 100%;
+        text-align: center;
+    }
+    .segunda__colab > img{
+        width: 80%;
+        height: 100%;
+        object-fit:initial;
+    }
+    .hover__colab{
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        transform: scale(0);
+        transition: transform 700ms;
+        display: flex;
+        text-align: center;
+        margin-left: 7rem;
+    }
+}
 
-.grid__new__arrivals{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+
+.slider__new__arrivals{
+    width: 100%;
     height: 80rem;
-    background-image: url(fotos/variasnike.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-/*caja contenedora de fotos*/
-
-.new__arrivals{
-    grid-column: 1/13;
-    display: flex;
-    justify-content: space-between;
-    height: 70rem;
-}
-
-/*fotos glass*/
-
-.box__new__arrival{
-    max-width: 33%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(20px);
-    border: solid 1px rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    margin: 1em;
-}
-
-/*caja individuales*/
-.box__new__foto{
-    width: 100%;
-    height: 80%;
-}
-
-.box__new__foto > img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    align-items: center;
-}
-
-.box__new__texto{
-    width: 100%;
-    height: 20%;
-}
-
-.box__new__texto > p{
-    font-size: 3rem;
-    text-align: center;
-}
 
 /*footer*/
 
@@ -446,7 +316,9 @@ html{
 }
 
 
-/*PAGINA DE COLABORACIONES*/
+/*===============================PAGINA COLABS================================*/
+
+
 
 /*imagen de fondo*/
 
@@ -468,7 +340,7 @@ html{
     display: grid;
     grid-template-rows: repeat(3,max-content);
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 15rem;
 }
 
 /*estilo contenedor*/
@@ -481,6 +353,7 @@ html{
     backdrop-filter: blur(20px);
     border: solid 1px rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    
 }
 
 /*textos colaboraciones*/
@@ -525,7 +398,7 @@ html{
 }
 
 
-/*PAGINA NOSOTROS*/
+/*=======================PAGINA NOSOTROS==========================*/
 .body__nosotros{
     background-image: url(fotos/jordan\ naranja.jpeg);
     background-repeat: no-repeat;
@@ -582,7 +455,7 @@ html{
 }
 
 
-/*PAGINA CONTACTO*/
+/*======================PAGINA CONTACTO=====================*/
 
 /*fondo imagen*/
 
@@ -604,6 +477,7 @@ html{
     grid-column: 1/6;
     display: flex;
     min-height: 100vh;
+    margin-top: 5em;
 }
 
 .form{
@@ -672,7 +546,7 @@ html{
 }
 
 
-/*PAGINA SNEAKERS*/
+/*=======================PAGINA SNEAKERS=====================*/
 
 .body__sneakers{
     display: grid;
@@ -684,25 +558,26 @@ html{
 }
 
 .main__sneakers{
-    grid-column: 1/6;
     height: 60rem;
-    gap: 1fr;
-    min-width: 100%;
 }
 
 /*CAJAS INDIVIDUALES*/
 
-.box{
+
+
+.boxs{
+    width: 100%;
+    height: 80rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100%;
+    justify-content: space-between;
 }
 
 /*BOX GLASS*/
 .box__marcas{
     width: 100%;
-    height: 60%;
+    height: 80%;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
     border: solid 1px rgba(255, 255, 255, 0.5);
@@ -722,176 +597,108 @@ html{
 
 .box__marcas > img{
     width: 100%;
-    height: 80%;
+    height: 70%;
     object-fit: contain;
 }
 
 
 .box__marcas > h4{
     width: 100%;
-    height: 20%;
-    font-size: 1rem;
+    height: 30%;
+    font-size: .5em;
     text-align: center;
+}
+
+#carouselExampleSlidesOnly{
+    display: none;
+}
+/*========CARRUSEL RESPONSIVE=============*/
+
+
+@media screen and (max-width:768px){
+    .main__sneakers{
+        width: 100%;
+        height: 60rem;
+    }
+    .boxs{
+        display: none;
+    }
+
+    #carouselExampleSlidesOnly{
+        display: block;
+        height: 50rem !important;
+        align-items: center;
+    }
+
+    .carousel-inner{
+        margin-top: 40rem !important;
+    }
+
+
+    .carousel-item > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-top: 20em;
+    }
+
+
 }
 
 
 
+
+/*===================PAGINA LOGIN================*/
+
+.body__login{
+    background-image: url(fotos/nikejean.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.ingreso__nuevo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 80rem;
+    
+}
+
+.ingresar{
+    grid-column: 1/2;
+    width: 60%;
+    height: 50%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.titulo__login{
+    width: 100%;
+    font-size: 3em;
+    letter-spacing: .5em;
+    color: #f5f5f5;
+} 
+
+.formulario__ingreso{
+    width: 100%;
+    
+}
+
+
+
+.nuevo{
+    grid-column: 2/3;
+    width: 90%;
+}
 
 /*menu media queri pagina principal*/
+
 @media screen and (max-width:767px) {
-    /*nav*/
-
-    .check__img{  
-        display: block;  
-        width: 40%;
-        height: 100%;
-        text-align: center;
-        margin-top: 2em;
-    }
-
-    .check__img > img{
-        width: 20%;
-        height: 50%;
-    }
-    .header__menu{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        margin-top: 6rem;
-        display: none;
-    }
-
-    .menu__lista > li{
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        transition: all 400ms ease;
-    }
-
-    .menu__lista > li:hover{
-        background-color: rgba(0, 0, 0, 1);
-        transition: all 400ms ease;
-        transform: scale(1.13);
-    }
-
-    #check__menu:checked ~ .header__menu{
-        display: block;
-        z-index: 1;
-    }
-    
-    /*video*/
-    .header__video{
-        display: none;
-    }
-
-    /*hader*/
-    .header{
-        background-image: url(fotos/bguvpdspqgu3r7houuhi.jpg);
-        background-repeat: no-repeat;
-        object-fit: cover;
-        background-size: 100% 100%;
-        display: grid;
-        grid-template-columns:repeat(12,1fr);
-        height: 40rem;        
-    }
-
-    /*titulos*/
-    .titulo{
-    grid-column: 1/13;
-    height: 4rem;
-    display:block;
-    font-size: 3rem;
-    letter-spacing: 1rem;
-    text-align: center;
-    border-bottom: 1px solid #000000;
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
-    }
-    /*seccion zapatillas hot sale*/
-    .hot__sale__zapatillas{
-        grid-column: 1/13;
-        display: flex;
-        justify-content: space-between;
-        height: 35rem;
-    }
-
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        height: 40rem;
-    }
-
-    .hot__sale__box__texto > p{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    /*seccion colaboraciones*/
-    .titulo__colaboraciones{
-        width: 100%;
-        height: 4rem;
-        display:block;
-        font-size: 3rem;
-        letter-spacing: 1rem;
-        text-align: center;
-        border-bottom: 1px solid #000000;
-        box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
-    }
-
-    .box__colaboraciones{
-        grid-column: 1/13;
-        height: 40rem;
-    }
-    /*seccion new arrivals*/
-    .new__arrivals{
-        grid-column: 1/13;
-        display: flex;
-        justify-content: flex-start;
-        height: 35rem;
-    }
-
-    .grid__new__arrivals{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        height: 40rem;
-        background-image: url(fotos/variasnike.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /*caja individuales*/
-.box__new__foto{
-    width: 100%;
-    height: 60%;
-}
-
-.box__new__foto > img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    align-items: center;
-}
-
-.box__new__texto{
-    width: 100%;
-    height: 20%;
-}
-
-    .box__new__texto > p{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    
-    .box__new__arrival{
-        max-width: 30%;
-        height: 80%;
-        background-color: rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(20px);
-        border: solid 1px rgba(255, 255, 255, 0.5);
-        border-radius: 5px;
-        margin-top: 4em;
-    }
-
     /*footer*/
     .grid__footer{
         display: grid;
@@ -927,9 +734,8 @@ html{
 .texto_footer > p{
     font-size: 1em;
     text-align: center;
-    color: #000000;
+ titulo__colaboraciones   color: #000000;
 }
-
 /*box logos redes*/
 
 .caja__logos{
@@ -938,7 +744,6 @@ html{
     display: flex;
     justify-content: center;
 }
-
 
 /*PAGINA DE SNEAKERS*/
 
@@ -1017,7 +822,7 @@ html{
     display: grid;
     grid-template-rows: repeat(3,max-content);
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 15rem;
 }
 
 /*estilo contenedor*/
@@ -1099,7 +904,7 @@ html{
     grid-template-rows: repeat(2,max-content);
     align-items: center;
     gap: 3rem;
-    margin-top: 2rem;
+    margin-top: 20rem;
 }
 
 .titulo__nosotros{
