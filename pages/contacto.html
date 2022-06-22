@@ -8,46 +8,51 @@
     <link rel="icon" href="../fotos/sneaker-head-sd-graphics-studio.jpg"">
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="body__contacto">
+<body  class="body__nosotros">
     <!--zona header-->
-    <header class="header__pages">
-        <!--inicio de barra de menu-->
-        <div class="header__barra__menu">
-            <!--logo izquierdo-->
-            <div class="header__logo">
-                <a href="../index.html"><img src="../fotos/sneaker-head-sd-graphics-studio-PhotoRoom.png" alt="logo"></a>
-            </div>
-            <!--menu responsive-->
-            <input type="checkbox" id="check__menu">
-            <label for="check__menu" class="check__img">
-                <img src="../fotos/lista.png" alt="">
-            </label>            
-            <!--lista de menu y sub-->
-            <nav class="header__menu">
-                <ul class="menu__lista">
-                    <li><a href="sneakers.html">SNEAKERS</a>
-                        <ul>
-                            <!--submenu-->
-                            <li><a href="nike.html">Nike</a></li>
-                            <li><a href="adidas.html">Adidas</a></li>
-                            <li><a href="newbalance.html">NewBalance</a></li>
-                            <li><a href="jordan.html">Jordan</a></li>
-                            <li><a href="puma.html">Puma</a></li>
+    <header>
+        <nav class="navbar bg-light bg-opacity-75 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../fotos/sneaker-head-sd-graphics-studio-PhotoRoom.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sneacker Head</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sneakers.html">Sneakers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="colaboraciones.html">Colaboraciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li><a href="colaboraciones.html">COLABORACIONES</a></li>
-                    <li><a href="nosotros.html">NOSOTROS</a></li>                
-                    <li><a href="contacto.html">CONTACTO</a></li>               
-                </ul>
-            </nav>
-            <!--seccion de login-->
-            <div class="header__login">
-                <img src="../fotos/login_preview_rev_1.png" alt="login">
-                <a href="../pages/login.html">Login</a>
-            </div>      
-        </div>
-        <!--fin de header-->
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>  
     <main class="form__main">
         <!--inicio de formulario de contacto-->
@@ -95,4 +100,5 @@
             </div>
         </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>¡
 </body>
