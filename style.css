@@ -87,7 +87,7 @@ html{
 
 .box__colaboraciones{
     grid-column: 1/13;
-    height: 80rem;
+    height: 55rem;
 }
 
 .titulo__colaboraciones{
@@ -102,7 +102,7 @@ html{
 
 @media screen and (max-width:768px){
     .grid{
-        height: 80rem;
+        height: 105rem;
     }
     
 
@@ -239,9 +239,19 @@ html{
 
 .slider__new__arrivals{
     width: 100%;
-    height: 80rem;
+    height: 50rem;
 }
 
+@media screen and (max-width:768px) {
+    .slider__new__arrivals{
+        height: 40rem;
+    }    
+    .carousel-item > img{
+        width: 40rem;
+        height: 40rem;
+        object-fit: contain;
+    }
+}
 
 /*footer*/
 
@@ -549,17 +559,13 @@ html{
 /*=======================PAGINA SNEAKERS=====================*/
 
 .body__sneakers{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
     background-image: url(fotos/jordangris.jpg);
     background-repeat: no-repeat;
     object-fit: contain;
     background-size: 100% 100%;
 }
 
-.main__sneakers{
-    height: 60rem;
-}
+
 
 /*CAJAS INDIVIDUALES*/
 
@@ -572,6 +578,7 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 12rem;
 }
 
 /*BOX GLASS*/
@@ -605,7 +612,7 @@ html{
 .box__marcas > h4{
     width: 100%;
     height: 30%;
-    font-size: .5em;
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -734,7 +741,7 @@ html{
 .texto_footer > p{
     font-size: 1em;
     text-align: center;
- titulo__colaboraciones   color: #000000;
+    color: #000000;
 }
 /*box logos redes*/
 
@@ -946,7 +953,5 @@ html{
     font-size: 2rem;
     letter-spacing: .5rem;
     margin-bottom: 1rem;
-}
-
-
+ }
 }
