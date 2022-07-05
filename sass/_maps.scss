@@ -1,0 +1,14 @@
+$footer: (
+    color1:#000000,
+    color2:#ffffff,
+    color3:#f9f9f9,
+    );
+
+
+.primer__footer {
+    background-color: map-get($footer, color1)
+}
+
+.segundo__footer{
+    background-color: map-get($footer, color2);
+}

@@ -1,0 +1,18 @@
+.grid{
+    grid-column: 1/13
+}
+
+.box__colaboraciones{
+    @extend .grid;
+    height: 55rem;
+}
+
+.titulo__colaboraciones{
+    @extend .grid;
+    height: 8rem;
+    display:block;
+    font-size: 6rem;
+    letter-spacing: 3rem;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
