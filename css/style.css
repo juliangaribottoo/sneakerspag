@@ -1,19 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container__video {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.container__video video {
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container__video h1 {
+  background: rgb(0, 0, 0);
+  font-size: 7em;
+  text-align: center;
+  height: 100%;
+  text-align: center;
+  padding-top: 0.5em;
+  font-weight: 900;
+  mix-blend-mode: multiply;
+  font-family: outfit;
+}
+
 .titulo {
-  grid-column: 1/13;
-  height: 8rem;
+  height: 4rem;
   display: block;
-  font-size: 6rem;
-  letter-spacing: 3rem;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
   text-align: center;
   border-bottom: 1px solid #000000;
 }
 
-.primer__footer {
-  background-color: #000000;
+.main__Medidas {
+  width: 100%;
+  height: 50rem;
+  align-items: center;
 }
 
-.segundo__footer {
-  background-color: #ffffff;
+@media (min-width: 598px) {
+  .main__Medidas {
+    width: 100%;
+    height: 60rem;
+    align-items: center;
+  }
+}
+@media (min-width: 764px) {
+  .main__Medidas {
+    width: 100%;
+    height: 80rem;
+    align-items: center;
+  }
+}
+.colaboraciones {
+  width: 100%;
+  height: 90rem;
+}
+.colaboraciones .box__colaboraciones {
+  height: 100%;
+  width: 100%;
+}
+.colaboraciones .box__colaboraciones .box__fotos__colab {
+  width: 100%;
+  height: 86rem;
+  display: flex;
+  flex-direction: column;
+}
+.colaboraciones .box__colaboraciones .box__fotos__colab .primer__colab {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.colaboraciones .box__colaboraciones .box__fotos__colab .primer__colab img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.colaboraciones .box__colaboraciones .box__fotos__colab .segunda__colab {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.colaboraciones .box__colaboraciones .box__fotos__colab .segunda__colab img {
+  width: 100%;
+  height: 100%;
+}
+
+.hover__colab {
+  display: none;
+}
+
+.slider__new__arrivals {
+  width: 100%;
+  height: 60rem;
+}
+
+.grid__footer {
+  display: grid;
+  grid-template-rows: repeat(2, 15rem);
+  grid-column: 1/6;
+}
+.grid__footer .primer__footer {
+  grid-row: 1/2;
+  background-color: #000000;
+}
+.grid__footer .primer__footer .texto__footer__1 {
+  width: 100%;
+  height: 50%;
+  margin-top: 4em;
+}
+.grid__footer .primer__footer .texto__footer__1 p {
+  font-size: 2rem;
+  margin: 0.5em;
+  text-align: center;
+  color: #ffffff;
+}
+.grid__footer .segundo__footer {
+  grid-row: 2/3;
+  height: 15rem;
+}
+.grid__footer .segundo__footer .texto_footer {
+  min-width: 100%;
+  height: 5em;
+  margin-top: 2em;
+}
+.grid__footer .segundo__footer .texto_footer p {
+  font-size: 2em;
+  text-align: center;
+  color: #000000;
+}
+.grid__footer .segundo__footer .texto_footer .caja__logos {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+}
+.grid__footer .segundo__footer .texto_footer .caja__logos a {
+  width: 10%;
+  height: 100%;
+}
+.grid__footer .segundo__footer .texto_footer .caja__logos a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .grid, .titulo__colaboraciones, .box__colaboraciones {
@@ -33,6 +181,14 @@
   border-bottom: 1px solid #000000;
 }
 
+.primer__footer {
+  background-color: #000000;
+}
+
+.segundo__footer {
+  background-color: #ffffff;
+}
+
 .box__fotos__colab {
   display: flex;
   justify-content: space-between;
@@ -48,6 +204,849 @@
   flex-direction: row;
   align-items: center;
   margin-top: 12rem;
+}
+
+.body__sneakers {
+  background-image: url(../fotos/jordangris.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: 100% 100%;
+}
+
+.boxs {
+  display: none;
+}
+
+#carouselExampleSlidesOnly {
+  display: block;
+  height: 50rem !important;
+  align-items: center;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 10em;
+}
+
+.body__colaboraciones {
+  background-image: url(//pages/FOTOS/abstract-black-background-with-yellow-and-black-geometric-pattern-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.colaboraciones__page {
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+.colaboraciones__page .box__colaboracion {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+.colaboraciones__page .box__colaboracion .texto__billie {
+  display: none;
+}
+.colaboraciones__page .box__colaboracion .video__billie {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+}
+.colaboraciones__page .box__colaboracion .video__billie video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body__nosotros {
+  background-image: url(../fotos/jordan\ naranja.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover;
+}
+
+.box__nosotros {
+  width: 100%;
+  height: 60rem;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  align-items: center;
+}
+.box__nosotros .titulo__nosotros {
+  grid-row: 1/2;
+  width: 100%;
+  height: 10rem;
+  margin-top: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.box__nosotros .titulo__nosotros h3 {
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.5em;
+  color: #f5f5f5;
+  text-align: center;
+  border-bottom: 1px solid #f5f5f5;
+}
+.box__nosotros .texto__nosotros {
+  grid-row: 2/3;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.box__nosotros .texto__nosotros p {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 27rem;
+}
+
+.container__navbar {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(250, 250, 250, 0.1);
+  position: fixed;
+  z-index: 50;
+}
+.container__navbar .navbar__Logo {
+  width: 100%;
+  height: 100%;
+  margin: 2em 0 0 2em;
+  text-align: left;
+}
+.container__navbar .navbar__Logo a img {
+  width: 5rem;
+  height: 5rem;
+}
+.container__navbar .navbar__Logohamburg {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  margin: 3em 3em 0 0;
+  cursor: pointer;
+}
+.container__navbar .navbar__Logohamburg img {
+  width: 3rem;
+  height: 3rem;
+}
+.container__navbar .navbar__Check {
+  display: none;
+}
+.container__navbar .navbar__List__contain {
+  position: fixed;
+  top: 7rem;
+  bottom: 0;
+  list-style: none;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  clip-path: circle(0 at center);
+  transition: clip-path 1s ease-in-out;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+.container__navbar .navbar__List__contain li:hover {
+  background-color: rgba(7, 57, 107, 0.2);
+  font-size: 1.5rem;
+  transition: all 400ms ease;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+.container__navbar .navbar__Check:checked + .navbar__List__contain {
+  clip-path: circle(100% at center);
+  z-index: 100;
+}
+
+.body__contacto {
+  background-image: url(../pages/FOTOS/jordanamarilla.jpeg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100% 100%;
+}
+
+.form__main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.form__main .box__formulario {
+  grid-column: 1/6;
+  display: flex;
+  min-height: 100vh;
+  margin-top: 5em;
+}
+.form__main .box__formulario .form {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: auto;
+  width: 90%;
+  max-width: 90rem;
+  padding: 4.5em 3em;
+  border-radius: 1em;
+  box-shadow: 0 0.5em 1em 0.5em rgb(0, 0, 0);
+  backdrop-filter: blur(1em);
+  text-align: center;
+}
+.form__main .box__formulario .form .titulo__form {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  margin-bottom: 1rem;
+}
+.form__main .box__formulario .form .form__container {
+  margin-top: 4em;
+  display: grid;
+  gap: 3em;
+}
+.form__main .box__formulario .form .form__container .form__grupo {
+  position: relative;
+  background-color: rgba(88, 88, 88, 0.1098039216);
+}
+.form__main .box__formulario .form .form__container .form__grupo .form__input {
+  width: 100%;
+  background: none;
+  font-size: 2rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #000000;
+}
+.form__main .box__formulario .form .form__container .form__grupo .block {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  transform: translateY(1rem);
+  transition: transform 400ms;
+}
+.form__main .box__formulario .form .form__container .form__input:focus + .block,
+.form__main .box__formulario .form .form__container .form__input:not(:placeholder-shown) + .block {
+  transform: translateY(-1.2rem) scale(1);
+  transform-origin: left top;
+  color: #000000;
+}
+.form__main .box__formulario .form .form__container .form__submit {
+  background: #eef121;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.form__input:focus + .block,
+.form__input:not(:placeholder-shown) + .block {
+  transform: translateY(-1.2rem) scale(1);
+  transform-origin: left top;
+  color: #000000;
+}
+
+header {
+  width: 100%;
+  height: 27rem;
+}
+
+.container__navbar {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(250, 250, 250, 0.1);
+  position: fixed;
+  z-index: 50;
+}
+.container__navbar .navbar__Logo {
+  width: 100%;
+  height: 100%;
+  margin: 2em 0 0 2em;
+  text-align: left;
+}
+.container__navbar .navbar__Logo a img {
+  width: 5rem;
+  height: 5rem;
+}
+.container__navbar .navbar__Logohamburg {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  margin: 3em 3em 0 0;
+  cursor: pointer;
+}
+.container__navbar .navbar__Logohamburg img {
+  width: 3rem;
+  height: 3rem;
+}
+.container__navbar .navbar__Check {
+  display: none;
+}
+.container__navbar .navbar__List__contain {
+  position: fixed;
+  top: 7rem;
+  bottom: 0;
+  list-style: none;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  clip-path: circle(0 at center);
+  transition: clip-path 1s ease-in-out;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+.container__navbar .navbar__List__contain li:hover {
+  background-color: rgba(7, 57, 107, 0.2);
+  font-size: 1.5rem;
+  transition: all 400ms ease;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+.container__navbar .navbar__Check:checked + .navbar__List__contain {
+  clip-path: circle(100% at center);
+  z-index: 100;
+}
+
+@media (min-width: 598px) {
+  header {
+    width: 100%;
+    height: 35rem;
+  }
+  .container__video {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -10;
+  }
+  .container__video video {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container__video h1 {
+    background: rgb(0, 0, 0);
+    font-size: 9em;
+    padding-top: 0.1em;
+    text-align: center;
+    height: 100%;
+    text-align: center;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+    font-family: outfit;
+  }
+  .main__Medidas {
+    width: 100%;
+    height: 60rem;
+    align-items: center;
+  }
+  .colaboraciones {
+    width: 100%;
+    height: 120rem;
+  }
+  .slider__new__arrivals {
+    width: 100%;
+    height: 78rem;
+  }
+  .boxs {
+    display: none;
+  }
+  #carouselExampleSlidesOnly {
+    display: block;
+    height: 50rem !important;
+    align-items: center;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 10em;
+  }
+}
+@media (min-width: 764px) {
+  header {
+    width: 100%;
+    height: 38rem;
+  }
+  .container__video {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -10;
+  }
+  .container__video video {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container__video h1 {
+    background: rgb(0, 0, 0);
+    font-size: 12em;
+    padding-top: 0.1em;
+    text-align: center;
+    height: 100%;
+    text-align: center;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+    font-family: outfit;
+  }
+  .main__Medidas {
+    width: 100%;
+    height: 80rem;
+    align-items: center;
+  }
+  .grid__footer {
+    display: grid;
+    grid-template-rows: repeat(2, 20rem);
+  }
+  .slider__new__arrivals {
+    width: 100%;
+    height: 80rem;
+  }
+  .boxs {
+    display: none;
+  }
+  #carouselExampleSlidesOnly {
+    display: block;
+    height: 50rem !important;
+    align-items: center;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 10em;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    width: 100%;
+    height: 70rem;
+  }
+  .container__navbar {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .container__navbar .navbar__Logo {
+    width: 100%;
+    height: 100%;
+  }
+  .container__navbar .navbar__Logo a img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .container__navbar .navbar__Logohamburg {
+    display: none;
+  }
+  .container__navbar .navbar__Check {
+    display: none;
+  }
+  .container__navbar .navbar__List__contain {
+    position: relative;
+    top: 0rem;
+    bottom: 0;
+    list-style: none;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    clip-path: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+  }
+  .container__navbar .navbar__List__contain li:hover {
+    background-color: rgba(7, 57, 107, 0.2);
+    font-size: 1.7rem;
+    transition: all 400ms ease;
+    border-radius: 5px;
+    padding: 0.3em;
+    width: 30%;
+    text-align: center;
+  }
+  header {
+    width: 100%;
+    height: 60rem;
+  }
+  .container__video {
+    width: 100%;
+    height: 87%;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .container__video video {
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container__video h1 {
+    background: rgb(0, 0, 0);
+    font-size: 17em;
+    padding-top: 0.1em;
+    text-align: center;
+    height: 100%;
+    text-align: center;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+    font-family: outfit;
+  }
+  .titulo {
+    height: 5rem;
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+  }
+  .main__Medidas {
+    width: 100%;
+    height: 85rem;
+    align-items: center;
+  }
+  .colaboraciones {
+    width: 100%;
+    height: 80rem;
+    margin-top: 10rem;
+  }
+  .colaboraciones .box__colaboraciones {
+    height: 100%;
+    width: 100%;
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .primer__colab {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .primer__colab img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .hover__colab {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(0);
+    transition: transform 700ms;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .hover__colab img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .hover__colab p {
+    font-size: 3rem;
+    color: #f5f5f5;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .segunda__colab {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .segunda__colab img {
+    width: 100%;
+    height: 100%;
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .primer__colab:hover .hover__colab {
+    transform: scale(1);
+  }
+  .colaboraciones .box__colaboraciones .box__fotos__colab .segunda__colab:hover .hover__colab {
+    transform: scale(1);
+  }
+  .slider__new__arrivals {
+    width: 100%;
+    height: 85rem;
+    top: 0;
+    margin-top: 6rem;
+  }
+  .grid__footer {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-column: 1/6;
+    height: 20rem;
+  }
+  .grid__footer .primer__footer {
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+  }
+  .grid__footer .primer__footer .texto__footer__1 {
+    width: 100%;
+    height: 100%;
+    margin-top: 4em;
+  }
+  .grid__footer .primer__footer .texto__footer__1 p {
+    font-size: 2rem;
+    margin: 0.5em;
+    text-align: center;
+    color: #ffffff;
+  }
+  .grid__footer .segundo__footer {
+    width: 50%;
+    height: 100%;
+  }
+  .grid__footer .segundo__footer .texto_footer {
+    min-width: 100%;
+    height: 5em;
+    margin-top: 2em;
+  }
+  .grid__footer .segundo__footer .texto_footer p {
+    font-size: 2em;
+    text-align: center;
+    color: #000000;
+  }
+  .grid__footer .segundo__footer .texto_footer .caja__logos {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+  }
+  .grid__footer .segundo__footer .texto_footer .caja__logos a {
+    width: 10%;
+    height: 100%;
+  }
+  .grid__footer .segundo__footer .texto_footer .caja__logos a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .main__sneakers {
+    width: 100%;
+    height: 40rem;
+  }
+  .main__sneakers .boxs {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+  }
+  .main__sneakers .boxs .box__marcas {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    margin: 1em;
+  }
+  .main__sneakers .boxs .box__marcas img {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .main__sneakers .boxs .box__marcas h4 {
+    width: 100%;
+    height: 30%;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .box__marcas:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: transform 700ms;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    border: 0.5em #000000 solid;
+  }
+  #carouselExampleSlidesOnly {
+    display: none;
+  }
+  .colaboraciones__page {
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    gap: 1.5rem;
+    margin-top: 5rem;
+  }
+  .colaboraciones__page .box__colaboracion {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+  .colaboraciones__page .box__colaboracion .texto__billie {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+  }
+  .colaboraciones__page .box__colaboracion .texto__billie h3 {
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    letter-spacing: 1em;
+    margin-top: 1em;
+    text-align: center;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+  }
+  .colaboraciones__page .box__colaboracion .texto__billie p {
+    width: 100%;
+    height: 75;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .colaboraciones__page .box__colaboracion .video__billie {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+  }
+  .colaboraciones__page .box__colaboracion .video__billie video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    height: 70rem;
+  }
+  .container__video {
+    width: 100%;
+    height: 87%;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -10;
+  }
+  .container__video video {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container__video h1 {
+    background: rgb(0, 0, 0);
+    font-size: 20em;
+    padding-top: 0.3em;
+    text-align: center;
+    height: 100%;
+    text-align: center;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+    font-family: outfit;
+  }
+  .main__sneakers {
+    width: 100%;
+    height: 40rem;
+  }
+  .main__sneakers .boxs {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .main__sneakers .boxs .box__marcas {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    margin: 1em;
+  }
+  .main__sneakers .boxs .box__marcas img {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .main__sneakers .boxs .box__marcas h4 {
+    width: 100%;
+    height: 30%;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .box__marcas:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: transform 700ms;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    border: 0.5em #000000 solid;
+  }
+  #carouselExampleSlidesOnly {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

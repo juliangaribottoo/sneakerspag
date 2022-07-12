@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aca vas a encontrar las mejores sneakers de Argentina, los ultimos modelos y lo mejor del mercado">
+    <meta name="description" content=",Aca vas a encontrar las mejores sneakers de Argentina, los ultimos modelos y lo mejor del mercado">
     <meta name="keywords" content="sneakers, zapatillas, zapatillasnuevas, sneakers2022, new sneakers, sneakers colab, colaboraciones sneakers">
     <title>Sneakers Head</title>
     <link rel="icon" href="../fotos/sneaker-head-sd-graphics-studio-PhotoRoom""> 
@@ -19,54 +19,42 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-light bg-opacity-75 fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="fotos/sneaker-head-sd-graphics-studio-PhotoRoom.png" alt="logo header"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sneacker Head</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/sneakers.html">Sneakers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/colaboraciones.html">Colaboraciones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/login.html">Login</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-dark" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
+        <nav class="container__navbar">
+            <div class="navbar__Logo">
+                <a class="navbar__Icon" href="index.html"><img src="fotos/sneaker-head-sd-graphics-studio-PhotoRoom.png" alt="logo header"></a>
             </div>
+            <label for="menu" class="navbar__Logohamburg">
+                <img src="fotos/list.png" alt="boton hamburgesa">
+            </label>
+            <input type="checkbox" id="menu" class="navbar__Check">
+            <ul class="navbar__List__contain">
+                <li class="navbar__Link">
+                    <a class="nav-link" href="pages/sneakers.html">Sneakers</a>
+                </li>
+                <li class="navbar__Link">
+                    <a class="nav-link" href="pages/colaboraciones.html">Colaboraciones</a>
+                </li>
+                <li class="navbar__Link">
+                    <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="navbar__Link">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li class="navbar__Link">           
+                <li>
+                    <a class="nav-link" href="pages/login.html">Login</a>
+                </li>
+            </ul>
         </nav>
-        <div class="container-fluid w-100">
-            <video src="fotos/Introducing the LeBron 17   Nike.mp4" loop autoplay muted class="video__lebron"></video>
+        <div class="container__video">
+            <video src="pages/FOTOS/travis.mp4" autoplay loop muted></video>
+            <h1>SNEACKER HEAD</h1>
         </div>
     </header>
+    <!---INICIO DE SECCION PRINCIPAL-->
     <main>
-        <section>
-            <h3 class="titulo">Hot Sale</h3>
-            <div id="carouselExampleCaptions" class="carousel slide mb-4" data-bs-ride="false">
+        <section class="main__Medidas"> <!--=======CARRUSEL=======-->            
+            <h3 class="titulo">HOT SALE</h3>
+            <div id="carouselExampleCaptions" class="carousel slide mb-4 w-100 h-75" data-bs-ride="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -74,21 +62,21 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="fotos/adidas-simpsons.jpg" class="d-block w-100" alt="adidas x simpsons">
+                        <img src="fotos/adidas-simpsons.jpg" class="d-block w-75 h-75  alig m-auto" alt="adidas x simpsons">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Adidas Grand Court x The Simpsons</h5>
                             <p>$20.000</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="fotos/naik-airmax.jpg" class="d-block w-100" alt="nike air max">
+                        <img src="fotos/naik-airmax.jpg" class="d-block w-75 h-75  alig m-auto" alt="nike air max">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>AIR MAX ALPHA TRAINER 4</h5>
                             <p>$23.000</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="fotos/balenciagas.jpg" class="d-block w-100" alt="balenciagas">
+                        <img src="fotos/balenciagas.jpg" class="d-block w-75 h-75  alig m-auto" alt="balenciagas">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Balenciaga Speed 2.0</h5>
                             <p>EUR $775</p>
@@ -96,19 +84,19 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon w-25 bg-black" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon w-25 bg-black" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
         <!--seccion de colaboraciones-->
-        <section class="grid">
+        <section class="colaboraciones">
             <div class="box__colaboraciones">
-                <h1 class="titulo">NEW COLABS</h1>
+                <h3 class="titulo">NEW COLABS</h3>
                 <div class="box__fotos__colab">
                     <div class="primer__colab">
                         <img src="fotos/billie-eilish-nike-coleccion-zapatillas-ropa-25042022-in1.jpg" alt="BillieEilish">
@@ -129,6 +117,7 @@
                 </div>
             </div>
         </section>
+
         <section class="slider__new__arrivals">
             <h3 class="titulo">New Arrivals</h3>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -137,15 +126,15 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner h-75">
                     <div class="carousel-item active">
-                        <img src="fotos/yeezycarbon.jpg" class="d-block w-100" alt="adidas yeezy">
+                        <img src="fotos/yeezycarbon.jpg" class="d-block w-75 h-75  alig m-auto" alt="adidas yeezy">
                     </div>
                     <div class="carousel-item">
-                        <img src="fotos/adidas-prada-x-forum-low-white-gy7042_1.jpg" class="d-block w-100" alt="Adidas x prada">
+                        <img src="fotos/adidas-prada-x-forum-low-white-gy7042_1.jpg" class="d-block w-75 h-75  alig m-auto" alt="Adidas x prada">
                     </div>
                     <div class="carousel-item">
-                        <img src="fotos/x-travis-scott-air-force-1-low-sneakers-original-9047681.jpg" class="d-block w-100" alt="nike traviss scott">
+                        <img src="fotos/x-travis-scott-air-force-1-low-sneakers-original-9047681.jpg" class="d-block w-75 h-75  alig m-auto" alt="nike traviss scott">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
